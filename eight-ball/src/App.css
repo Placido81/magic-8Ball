@@ -12,7 +12,7 @@
   text-shadow: 1px 1px 1px white;
   border: 6px solid rgb(201, 3, 6);
   font-weight: 100;
-  background: linear-gradient(90deg, rgb(83, 78, 178) 0%, rgb(74, 74, 227) 44%, rgb(101, 174, 171) 100%); 
+  background: linear-gradient(90deg, rgba(85, 85, 87, 0.489) 0%, rgb(101, 98, 98) 44%, rgba(155, 120, 131, 0.473) 100%); 
 }
 .title{
   margin: 1.2em;
@@ -43,7 +43,9 @@ input[type=text]{
 input[type=text]:focus {
    outline: none;
 }
-
+.eight-ball:hover{
+  transition: height 0.3s ease-in;
+}
 .eight-ball {
   background-color: black;
   border: 1px solid white;
@@ -53,6 +55,7 @@ input[type=text]:focus {
   margin: 0 auto;
   margin-bottom: 30px;
   margin-top: 30px;
+  
 }
     
 .content {
@@ -69,15 +72,16 @@ input[type=text]:focus {
   margin: 20% auto;
   color: black;
   text-shadow: 1px 1px 1px rgb(255, 0, 0);
+  
 }
     
 .answer {
   padding:20px;
-  color: crimson;
-  text-shadow: 1px 1px 1px rgb(254, 247, 247);
+  color: yellow;
+  text-shadow: 1px 1px 1px rgb(240, 20, 20);
   background:blue;
   border: 1px solid rgb(156, 207, 236);
-  border-radius:74% ;
+  border-radius:80% 80% 80%;
   letter-spacing: 1px;
   font-size:20px;
   font-weight: 700;

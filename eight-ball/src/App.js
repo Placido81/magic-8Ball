@@ -7,15 +7,16 @@ function App() {
 const [userInput, setUserInput] = useState('');
 const [randomIndex, setRandomIndex] = useState('');
 const [error, setError] = useState('');
+const [question, setQuestion] = useState("");
 
 
-//Using  handleChange method we are setting out user’s question to userInput property of our state.
+{/*Using  handleChange method we are setting out user’s question to userInput property of our state.*/}
 const handleChange = (event) => {
   event.preventDefault();
   console.log(event.target.value);
   setUserInput(event.target.value);
 }
-// handleClick() check for userInput
+{/* handleClick() check for userInput*/}
 const handleClick = () => {
 
   if(userInput)
@@ -59,7 +60,9 @@ const answer = possibleAnswers[randomIndex];
       <p className="info">Ask a question and tap the 8 for an answer...</p>
       <input type="text" className="question" value={userInput} onChange={handleChange} />
       <div className="eight-ball">
-     { /*onClick() handler is triggered when the ball is clicked and runs the handleClick*/ }
+      
+     {/*onClick() handler is triggered when the ball is clicked and runs the handleClick*/}
+
         <div className="content" onClick={handleClick}>
         {error ? <p className="error">{error}</p> :
           answer ? <p className="answer">{answer}</p> : <p className="eight">8</p>}
